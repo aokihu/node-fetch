@@ -1,6 +1,6 @@
 {
-  "name": "node-fetch",
-  "version": "1.0.0",
+  "name": "little-fetch",
+  "version": "1.0.1",
   "description": "The smallet nodejs http(s) client module",
   "main": "index.js",
   "scripts": {
