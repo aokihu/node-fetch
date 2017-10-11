@@ -1,0 +1,24 @@
+{
+  "name": "node-fetch",
+  "version": "1.0.0",
+  "description": "The smallet nodejs http(s) client module",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aokihu/node-fetch.git"
+  },
+  "keywords": [
+    "http",
+    "request",
+    "http-client"
+  ],
+  "author": "aokihu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/aokihu/node-fetch/issues"
+  },
+  "homepage": "https://github.com/aokihu/node-fetch#readme"
+}
