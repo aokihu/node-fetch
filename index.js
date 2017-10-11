@@ -13,10 +13,8 @@ function fetch({url, method="GET", headers, postData=null}){
       hostname: u.hostname,
       path: u.pathname+u.search+u.hash,
     }
-    console.log(opts)
 
     return new Promise((ok, fail) => r(opts, c, postData,ok, fail))
-
 }
 
 fetch.pipe = () => {
