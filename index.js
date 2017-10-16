@@ -1,24 +1,13 @@
 const http = require('http')
 const https = require('https')
-const {URL} = require('url')
+const URL = require('url')
 
 function fetch({url, method="GET", headers, postData=null}){
     let _url = url.match(/^http/) ? url : 'https://'+url
-    let u = new URL(_url)
+    let u = URL.parse(_url)
+    let opts = Object.assign({}, u, {method, headers});
     let c = u.protocol === 'https:' ? https : http
-    let opts = {
-      method, headers,
-      port: u.port,
-      protocol: u.protocol,
-      hostname: u.hostname,
-      path: u.pathname+u.search+u.hash,
-    }
-
     return new Promise((ok, fail) => r(opts, c, postData,ok, fail))
-}
-
-fetch.pipe = () => {
-  console.log(fetch.pipe.caller())
 }
 
 const r = (opts, c, postData, ok, fail) => {

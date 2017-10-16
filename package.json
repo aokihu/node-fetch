@@ -1,6 +1,6 @@
 {
   "name": "little-fetch",
-  "version": "1.0.2",
+  "version": "1.0.4",
   "description": "The smallet nodejs http(s) client module",
   "main": "index.js",
   "scripts": {
@@ -13,7 +13,9 @@
   "keywords": [
     "http",
     "request",
-    "http-client"
+    "http-client",
+    "fetch",
+    "get"
   ],
   "author": "aokihu",
   "license": "MIT",
